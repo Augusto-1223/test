@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Mono+One&family=Share+Tech+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #f4f6f8;
+    color: #222222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1b4332;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-family: 'Rubik Mono One', monospace;
+    margin-bottom: 12px;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 14px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffb703;
+}
+
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.caixa {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #1b4332;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.imagem-destaque {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.lista-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 240px;
+    background-color: #f9fafb;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #d97706;
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: #1b4332;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.descricao-contato {
+    margin-bottom: 18px;
+}
+
+.grupo-campos {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 18px;
+    margin-bottom: 20px;
+    background-color: #f9fafb;
+}
+
+.grupo-campos legend {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #d97706;
+    padding: 0 8px;
+}
+
+.linha-dupla {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.linha-dupla .campo {
+    flex: 1;
+    min-width: 220px;
+}
+
+.campo {
+    margin-bottom: 14px;
+}
+
+.campo:last-child {
+    margin-bottom: 0;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #1b4332;
+}
+
+.opcional {
+    font-size: 12px;
+    color: #666666;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #1b4332;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.campo-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #1b4332;
+}
+
+.campo-checkbox label {
+    font-size: 14px;
+    color: #222222;
+}
+
+.acoes-form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-enviar {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    background-color: #1b4332;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 28px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #2d6a4f;
+    color: #ffb703;
+}
+
+.aviso-form {
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #1b4332;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 13px;
+}
